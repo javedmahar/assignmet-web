@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Meme Gallery</title>
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!--STYLE SHEET LINNK-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body">
+
+    <h1>MY FAVORITE MEMES</h1>
+    <!--IMAGE GALLERY-->
+    <div class="photo-gallery">
+        <img id = "images" src="img5.jpg"  width="620" height="400">
+        <div id = "caption" class="caption">Smile Please</div>
+        <div id = "desc"class="text-style">When it's picture day and the photographer tells you to give a natural smile</div>
+    </div>
+    <!--BUTTON TO CHANGE PICTURE-->
+    <div>
+    <button class="button" onclick="changeImage()">Change Image</button>
+    </div>
+    <!--LOADING JAVA SCRIPT-->
+    <script>
+    
+        
+    //list of images
+    let images =  [ 
+        "img1.jpg",
+        "img2.jpg",
+        "img3.jpg",
+        "img4.jpg", 
+        "img5.jpg"
+    ];
+
+    //list of titles*/
+    let img_title = [
+    "Life is short", 
+    "Rock",
+    "More options",
+    "Diet",
+    "Smile Please"
+    ];
+
+    /*list of image descrption*/
+    let img_desc =[
+    "One day you're young, the nex day you're sitting at the edge of your bed like this..",
+    "When you put your 'big rocks' in first, but they're all Dwayne Johnson.",
+    "When your boss ask you to implement both option1 and option2",
+    "When you are on see food Diet",
+    "When it's picture day and the photographer tells you to give a natural smile"
+
+    ];
+    /*global veriable to control images, title and description lists*/
+    let i=0;
+    /*function on click*/
+    function changeImage() {
+    let imageContainer = document.getElementById('images');
+    // Change the source of the image
+    if (i<5)
+    {
+        imageContainer.src = images[i];
+        document.getElementById("caption").innerHTML=img_title[i];
+        document.getElementById("desc").innerHTML=img_desc[i];
+    }
+    else{
+        i=0
+        imageContainer.src = images[i];
+        document.getElementById("caption").innerHTML=img_title[i];
+        document.getElementById("desc").innerHTML=img_desc[i];
+    }
+    i++;
+    }
+    </script>
+</body>
+</html>
