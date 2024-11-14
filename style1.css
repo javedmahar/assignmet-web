@@ -1,0 +1,84 @@
+/*style shhet*/
+
+/*heading style*/
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+}
+
+/*body style*/
+.body {
+    font-family: 'Libre Baskerville', serif;
+    background-color: black;
+    color: white;
+    margin: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    flex-direction: column;
+}
+
+/*text style*/
+.text-style{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 25px;
+    
+}
+
+/*description style*/
+.desc {
+
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom:20px ;
+  }
+
+/*image caption or title style*/
+.caption {
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom:10px ;
+}
+
+/*image container style*/
+.photo-gallery img {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+}
+
+/*image mouse hover*/
+.photo-gallery:hover img {
+  transform: scale(1.1); /* Zoom in on hover */
+  filter: brightness(0.9);
+}
+
+/*button style*/
+.button {
+  background-color: #04AA6D; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-bottom: 20px;
+  }
+ 
+
+ 
